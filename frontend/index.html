@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پیش‌بینی نتایج مسابقات ورزشی</title>
+    <link rel="stylesheet" href="../frontend/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>پیش‌بینی نتایج مسابقات ورزشی</h1>
+        <form id="predictionForm">
+            <label for="sport">انتخاب ورزش:</label>
+            <select id="sport" name="sport" required></select>
+
+            <label for="score1">امتیاز تیم 1:</label>
+            <input type="number" id="score1" name="score1" required>
+
+            <label for="score2">امتیاز تیم 2:</label>
+            <input type="number" id="score2" name="score2" required>
+
+            <button type="submit">پیش‌بینی</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../frontend/script.js"></script>
+</body>
+</html>
