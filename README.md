@@ -130,6 +130,3 @@ python app.py
 
 MIT License
 
----
-
-**Developer:** Mehdi Tootkar Bidarigh
