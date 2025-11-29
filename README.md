@@ -1,39 +1,100 @@
-**Sports Match Outcome Prediction Using Random Forest**
-A machine learning project that predicts multi-sport match outcomes using a Random Forest model.
+#  Sports Match Outcome Prediction Using Random Forest
 
-**Overview**
+A data-driven machine learning system designed to **predict match outcomes across 12 different sports** using a **Random Forest Classifier**.  
+This project combines a Python-based backend with a clean and intuitive web-based frontend to deliver accurate and interactive sports predictions.
 
-This project focuses on predicting the outcomes of sports matches using machine learning, with the Random Forest algorithm at its core. The system is trained on historical match data collected from twelve different sports, enabling the model to learn the relationships between teams, match statistics, and winning outcomes. After the model is trained, users can select a sport and choose two teams, and the system will predict which team is more likely to win. The goal of this work is to demonstrate how data science and machine learning techniques can be applied to competitive sports to generate meaningful and data-driven predictions.
+---
 
- **Project Structure**
+##  Overview
 
-The project was developed in the VSCode environment and is divided into two main components:
-a backend implemented in Python and a frontend created using HTML, CSS, and JavaScript.
-The backend is responsible for loading datasets, preprocessing data, encoding team names, training the machine learning model, and generating predictions.
-The frontend provides a simple, clean interface that allows users to choose a sport and select two teams. Together, these components deliver a complete and functional system for automated sports match prediction.
+This project focuses on applying **machine learning** to forecast the outcomes of sports matches using historical data.  
+By training a **Random Forest model** on curated datasets from **twelve sports**, the system learns patterns between team performance, match statistics, and win outcomes.
 
-<img width="573" height="268" alt="Picture1" src="https://github.com/user-attachments/assets/f42c8631-9bd5-429b-866a-550faf45127b" />
+Once trained, users can select a sport, choose two teams, and instantly receive a **prediction of the likely winner**.  
+This project demonstrates how data science techniques can be utilized to create intelligent, real-world predictive systems in competitive sports.
 
- **Data Preparation & Modeling**
+---
 
-To prepare the data, all twelve datasets were loaded, cleaned, and standardized. Since the datasets originated from different sources, their column names were inconsistent and required normalization to create a unified structure. Team names were encoded into numerical values using Label Encoding, as machine learning models cannot process text directly. After this preprocessing stage, the Random Forest Classifier was trained on the cleaned and transformed data. This algorithm was chosen for its reliability, power, and ability to detect complex patterns within large datasets.
+##  Project Structure
 
-<img width="616" height="93" alt="Picture2" src="https://github.com/user-attachments/assets/2f562903-266c-4054-b7fc-3dfc444fb400" /> <img width="616" height="122" alt="Picture3" src="https://github.com/user-attachments/assets/96afc19d-e648-4239-b157-af13a0b6ea8b" /> <img width="616" height="46" alt="Picture4" src="https://github.com/user-attachments/assets/5f181f0b-d536-4f7f-8297-2d3f2e00dc88" /> <img width="616" height="120" alt="Picture5" src="https://github.com/user-attachments/assets/19369e98-a1d0-4856-a8ef-92cc998dcdb9" />
+The project consists of two major components:
 
- **Model Performance**
+### **🔹 Backend (Python)**
+- Loads and merges datasets from 12 sports  
+- Cleans and standardizes inconsistent columns  
+- Applies **Label Encoding** for team names  
+- Trains the **Random Forest Classifier**  
+- Generates predictions based on user inputs  
 
-Once training was complete, the model achieved an accuracy of approximately 70%, which is a promising outcome given the diversity of the sports involved and the limited features available in the dataset. The model benefits from access to a large volume of match data across various sports and from the robustness of the Random Forest algorithm. After the training phase, the system accepts two user-selected teams and predicts which team has a higher chance of winning.
+### **🔹 Frontend (HTML, CSS, JavaScript)**
+- Simple and modern UI  
+- Dropdowns for selecting a sport and two teams  
+- Displays instant prediction results  
 
- **User Interface**
+---
 
-A simple and user-friendly graphical interface was designed to make the system accessible to all users. Through the frontend, users can choose a sport, select two teams, and receive an instant prediction. The design is intentionally straightforward to ensure that even non-technical users can interact with the model effortlessly.
+##  Data Preparation & Modeling
 
-<img width="616" height="280" alt="Picture6" src="https://github.com/user-attachments/assets/03a4f045-0226-431f-b0e9-6ca39aca2aa3" />
+All datasets were unified through cleaning, standardization, and **Label Encoding**.  
+A **Random Forest Classifier** was then trained due to its strong performance on multi-feature datasets.
 
- **Challenges & Limitations**
+---
 
-Despite the strong performance, the project encountered several limitations. One key issue was the presence of unseen labels — teams that appeared in prediction requests but did not exist in the training dataset, making it impossible for the model to encode them correctly. Another major limitation was the absence of real-world contextual features such as team strategies, player conditions, weather, or recent performance, all of which play significant roles in determining match outcomes but were not included in the available data.
+##  Model Performance
 
- **Future Improvements**
+The model achieved an **accuracy of ~70%**, which is strong considering the diverse nature of sports and limited feature availability.
 
-There are several promising directions for extending and enhancing this project. Adding more detailed features — such as match location, recent team performance, and scoring trends — would help the model capture deeper patterns. Experimenting with more advanced algorithms like XGBoost or neural networks could further improve accuracy. Additionally, incorporating real-time match analysis would enable the system to adjust predictions dynamically as new information becomes available. With such enhancements, the project could evolve into a highly accurate and intelligent sports prediction system.
+---
+
+##  User Interface
+
+A clean UI allows users to pick a sport, select two teams, and instantly see the predicted winner.
+
+---
+
+##  Challenges & Limitations
+
+- Unseen team labels not present in training  
+- Missing contextual real-world features  
+- Dataset inconsistencies across sports  
+
+---
+
+##  Future Improvements
+
+- Adding richer features (recent stats, venue, weather)  
+- Testing models such as **XGBoost** or **Neural Networks**  
+- Real-time prediction updates  
+- Deeper team/player statistics  
+
+---
+
+##  Technologies Used
+
+- **Python** (backend)  
+- **HTML, CSS, JavaScript** (frontend)  
+- **scikit-learn**, pandas, numpy  
+
+---
+
+##  Installation & Setup
+
+1. Clone the repository:
+```bash
+git clone <your-repository-link>
+```
+
+2. Install backend dependencies:
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+3. Run frontend:
+- Open `index.html` in your browser
+
+---
+
+##  License
+
+MIT License
